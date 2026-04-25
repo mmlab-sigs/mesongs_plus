@@ -1,0 +1,16 @@
+n_block: 80
+cb: 4096
+depth: 20
+prune: 0.4
+finetune_lr_scale: 0.2
+
+# 训练和评估共用的 pruning rates 列表
+# train 脚本会对每个 rate 生成一份 checkpoint
+# eval RD 脚本会对每个 RD 点尝试所有 rate 的 checkpoint，取 PSNR 最高的
+pruning_rates: [0.2, 0.4]
+
+# RD curve settings: size limits based on FCGS compression results
+# Original size: 242.8 MB
+# FCGS compressed sizes (lambda 1e-4~16e-4): [20.1, 17.5, 15.1, 12.8, 10.9] MB
+# FCGS PSNR range: 21.65 ~ 21.76 dB
+rd_curve_size_limits: [20.1, 17.5, 15.1, 12.8, 10.9]

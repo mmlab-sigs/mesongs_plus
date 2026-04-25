@@ -1,0 +1,19 @@
+n_block: 80
+cb: 2048
+depth: 20
+prune: 0.4
+finetune_lr_scale: 0.2
+
+# 训练和评估共用的 pruning rates 列表
+pruning_rates: [0.2, 0.4]
+
+# RD curve settings: specify custom size limits (in MB) for RD curve evaluation
+# If rd_curve_size_limits is specified, it will be used instead of the default ratios
+# Example: [30, 40, 50, 60, 70, 80, 90, 100] will evaluate at these exact size limits
+# Comment out or leave empty to use default ratios [0.65, 0.7, 0.83, 0.95, 1.0] * size_limit_mb
+
+# RD curve settings: size limits based on FCGS compression results
+# Original size: 1450.3 MB
+# FCGS compressed sizes: [109.2, 95.7, 83.8, 71.5, 62.2] MB
+# FCGS PSNR range: 24.01 ~ 24.40 dB
+rd_curve_size_limits: [109.2, 95.7, 83.8, 71.5, 62.2]

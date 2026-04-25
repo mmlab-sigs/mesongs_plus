@@ -1,0 +1,14 @@
+n_block: 80
+cb: 2048
+depth: 20
+prune: 0.4
+finetune_lr_scale: 0.1
+
+# 训练和评估共用的 pruning rates 列表
+pruning_rates: [0.2, 0.4]
+
+# RD curve settings: size limits based on FCGS compression results
+# Original size: 894.9 MB
+# FCGS compressed sizes: [77.6, 67.4, 58.5, 49.6, 42.2] MB
+# FCGS PSNR range: 21.98 ~ 22.04 dB
+rd_curve_size_limits: [77.6, 67.4, 58.5, 49.6, 42.2]
