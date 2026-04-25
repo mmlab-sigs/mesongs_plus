@@ -10,6 +10,13 @@ Supported benchmarks (released scripts cover **13 scenes**):
 - **Tanks and Temples** — `train`, `truck`
 - **Deep Blending** — `drjohnson`, `playroom`
 
+
+We release the full set of compressed bit-streams and
+per-point `results.json` for all scenes (Mip-NeRF 360 + Tanks and Temples +
+Deep Blending) as a single archive:
+
+- **Google Drive**: [https://drive.google.com/file/d/1xhajsEVy5bnQayTtmM1apTMSWzlic572/view?usp=sharing](https://drive.google.com/file/d/1xhajsEVy5bnQayTtmM1apTMSWzlic572/view?usp=sharing)
+
 ## Install
 
 ```bash
@@ -66,6 +73,7 @@ mesongs++/
 > comparison experiments from our paper, but **only MesonGS++ shell scripts
 > under `scripts/` are officially released**. Other baselines can be run
 > directly via `splatwizard/scripts/train.py` / `eval.py`.
+
 
 ## Usage
 

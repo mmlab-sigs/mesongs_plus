@@ -18,8 +18,6 @@ RAHT=True
 USE_INDEXED=True
 SH_KEEP_THRESHOLD=-1
 SH_KEEP_TOPK=1000000
-PRUNING_RATE=-1.0
-GOLDEN_SEARCH_INTERVAL=50000
 
 SCENES=('train' 'truck')
 
@@ -54,7 +52,6 @@ do
         --final_checkpoint pth \
         --scene_imp "$SCENE" \
         --images images \
-        --use_quat \
         --eval_freq 1 \
         --n_block $N_BLOCK \
         --codebook_size $CODEBOOK_SIZE \
@@ -97,8 +94,6 @@ do
         --use_indexed $USE_INDEXED \
         --sh_keep_threshold $SH_KEEP_THRESHOLD \
         --sh_keep_topk $SH_KEEP_TOPK \
-        --golden_search_interval $GOLDEN_SEARCH_INTERVAL \
-        --pruning_rate $PRUNING_RATE \
         --save_bitstream \
         --save_rendered_image
 done

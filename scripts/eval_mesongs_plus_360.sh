@@ -27,8 +27,6 @@ RAHT=True
 USE_INDEXED=True
 SH_KEEP_THRESHOLD=-1
 SH_KEEP_TOPK=1000000
-PRUNING_RATE=-1.0
-GOLDEN_SEARCH_INTERVAL=50000
 
 SCENES=('bicycle' 'bonsai' 'counter' 'garden' 'kitchen' 'room' 'stump' 'flowers' 'treehill')
 # 示例：只跑单个场景
@@ -112,8 +110,6 @@ do
         --use_indexed $USE_INDEXED \
         --sh_keep_threshold $SH_KEEP_THRESHOLD \
         --sh_keep_topk $SH_KEEP_TOPK \
-        --golden_search_interval $GOLDEN_SEARCH_INTERVAL \
-        --pruning_rate $PRUNING_RATE \
         --save_bitstream \
         --save_rendered_image
 

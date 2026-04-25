@@ -53,7 +53,6 @@ do
         --final_checkpoint pth \
         --scene_imp "$SCENE" \
         --images images \
-        --use_quat \
         --eval_freq 1 \
         --n_block $N_BLOCK \
         --codebook_size $CODEBOOK_SIZE \
@@ -96,8 +95,6 @@ do
         --use_indexed $USE_INDEXED \
         --sh_keep_threshold $SH_KEEP_THRESHOLD \
         --sh_keep_topk $SH_KEEP_TOPK \
-        --golden_search_interval 50000 \
-        --pruning_rate -1 \
         --save_bitstream \
         --save_rendered_image
 done

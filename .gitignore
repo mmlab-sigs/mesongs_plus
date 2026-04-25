@@ -219,3 +219,4 @@ outputs/
 outputs_*/
 visual_results/
 experiments/stage_ablation/lego 30k/
+outputs_release.zip
