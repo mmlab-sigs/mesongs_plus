@@ -1,5 +1,9 @@
 # MesonGS++
 
+ <p>
+    <a href="https://arxiv.org/abs/2604.26799"><img src="https://img.shields.io/badge/Arxiv-Paper-red?style=flat&logo=arxiv" alt="Arxiv"></a>
+  </p>
+
 A clean, reproducible implementation of **MesonGS++**, our pipeline for 3D
 Gaussian Splatting compression. Built on top of the
 [SplatWizard](https://github.com/) framework.
@@ -163,6 +167,22 @@ rd_curve_size_limits: [109.2, 95.7, 83.8, 71.5, 62.2]   # MB, used in Step 2
 
 For single-scene runs (`compress_single_scene.sh`) the YAML is generated
 automatically; no manual config file is needed.
+
+## Citation
+
+If you find our work helpful, please consider citing:
+
+```bibtex
+@misc{xie2026mesongspp,
+  title         = {{MesonGS++}: Post-training Compression of 3D Gaussian Splatting with Hyperparameter Searching},
+  author        = {Xie, Shuzhao and Ge, Junchen and Zhang, Weixiang and Liu, Jiahang and Tang, Chen and Bai, Yunpeng and Ge, Shijia and Jiang, Jingyan and Huang, Yuzhi and Yang, Fengnian and Zhang, Cong and Fan, Xiaoyi and Wang, Zhi},
+  year          = {2026},
+  eprint        = {2604.26799},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CV},
+  url           = {https://arxiv.org/abs/2604.26799}
+}
+```
 
 ## License
 
