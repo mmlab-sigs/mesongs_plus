@@ -6,7 +6,7 @@
 
 A clean, reproducible implementation of **MesonGS++**, our pipeline for 3D
 Gaussian Splatting compression. Built on top of the
-[SplatWizard](https://github.com/) framework.
+[SplatWizard](https://github.com/splatwizard/splatwizard) framework.
 
 Supported benchmarks (released scripts cover **13 scenes**):
 
