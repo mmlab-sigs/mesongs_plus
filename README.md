@@ -20,7 +20,7 @@ per-point `results.json` for all scenes (Mip-NeRF 360 + Tanks and Temples +
 Deep Blending) as a single archive:
 
 - **Google Drive**: [https://drive.google.com/file/d/1xhajsEVy5bnQayTtmM1apTMSWzlic572/view?usp=sharing](https://drive.google.com/file/d/1xhajsEVy5bnQayTtmM1apTMSWzlic572/view?usp=sharing)
-
+- **Summary Spreadsheet**: Aggregated per-scene metrics are also available in [results.xlsx](./results.xlsx)
 ## Install
 
 ```bash
